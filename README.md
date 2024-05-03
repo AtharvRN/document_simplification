@@ -11,8 +11,10 @@ conda env create -f environment.yml
 
 We have used codes from [Document Level Planning for Text Simplification](https://github.com/liamcripwell/plan_simp) and [SimSum](https://github.com/epfml/easy-summary/tree/main).
 
-We have used a smaller version of the Wiki-Auto-Dataset which can be found [here](SimSum/data/wiki_auto_reduced).
-
+## Datasets Used
+- Smaller version of the Wiki-Auto-Dataset which can be found [here](SimSum/data/wiki_auto_reduced).
+- Plaba Dataset has been taken from (here)[https://osf.io/rnpmf/]
+- D-Wikipedia has been taken from (here)[https://github.com/epfml/easy-summary/tree/main/SimSum/data/D_wiki]
 # EVALUATION
 
 Use the following commands to evaluate output:

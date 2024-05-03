@@ -13,8 +13,9 @@ We have used codes from [Document Level Planning for Text Simplification](https:
 
 ## Datasets Used
 - Smaller version of the Wiki-Auto-Dataset which can be found [here](SimSum/data/wiki_auto_reduced).
-- Plaba Dataset has been taken from (here)[https://osf.io/rnpmf/]
-- D-Wikipedia has been taken from (here)[https://github.com/epfml/easy-summary/tree/main/SimSum/data/D_wiki]
+- Plaba Dataset has been taken from [here](https://osf.io/rnpmf/)
+- D-Wikipedia has been taken from [here](https://github.com/epfml/easy-summary/tree/main/SimSum/data/D_wiki)
+  
 # EVALUATION
 
 Use the following commands to evaluate output:

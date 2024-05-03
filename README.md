@@ -15,7 +15,7 @@ We have used codes from [Document Level Planning for Text Simplification](https:
 - Smaller version of the Wiki-Auto-Dataset which can be found [here](SimSum/data/wiki_auto_reduced).
 - Plaba Dataset has been taken from [here](https://osf.io/rnpmf/)
 - D-Wikipedia has been taken from [here](https://github.com/epfml/easy-summary/tree/main/SimSum/data/D_wiki)
-  
+
 # EVALUATION
 
 Use the following commands to evaluate output:
@@ -87,8 +87,20 @@ Uncomment relevant lines in `SimSum/main.py`.
 
  In order to run obtain results for PG_SIMSUM and pretrained-plan guided module, we need to get context representation for surrounding sentences. This can be done using the following command
 
- ```
+```
 python encode_contexts.py --data=DATASET_FILE.csv --x_col=complex --id_col=pair_id --save_dir=CONTEXT_DIR
 ```
 
 We have already done this for all the datasets and the embeddings are stored in ```SimSum/context_save_dir/``` 
+ # RESULTS 
+ 
+| Model | SARI           | D-SARI         |
+|------------------------------|----------------|----------------|
+| BART                         | 38.84          | 24.32          |
+| SIMSUM                       | 35.07          | 32.47          |
+| Plan-Guided                  | 25.57          | 24.27          |
+| **PG-SIMSUM**                | **43.56**      | **38.52**      |
+
+
+**Table: Results on R-Wiki-auto**
+ 
